@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  - Notlar
+    - Font size (paragraph): 15px
+    - Mobile: 375px
+    - Desktop: 1440px
+*/
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
+}
+.container-box {
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    width: 330px;
+    min-height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.div-box {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 10px;
+    max-width: 200px;
+}
+.article-box {
+    width: 200px;
+    /* padding: 0 4px 20px 4px; */
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.article-box h3{
+    line-height: 25px;
+    letter-spacing: normal;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+}
+.article-box p{
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    padding-bottom: 30px
+}
+
+/* CSS RESPONSIVE */
+@media only screen and (max-width:375px) {
+    .container-box{
+        width: 90%;
+        margin: 0 5%;
+        transition: 0.25s ease-in-out all;
+    }
+    .div-box{
+        width: 100%;
+        display: flex;
+        transition: 0.25s ease-in-out all;
+    }
+    img {
+       
+        transition: 0.25s ease-in-out all;
+    }
+    .article-box{
+        width: 90%;
+        transition: 0.25s ease-in-out all;
+    }
+    .article-box h3{
+        font-size: 18px;
+    }
+    .article-box p{
+        font-size: 14px;
+    }
+
+}
